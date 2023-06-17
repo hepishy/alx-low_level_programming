@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ * Description: print
+ * Return: Always Return 0
+*/
+int main(void)
+{
+	int i, j;
+	int div;
+	int mod;
+
+	for (i = 0; i < 100; i++)
+		for (j = i + 1; j < 100; j++)
+		{
+			if (i != j)
+			{
+				div = i / 10;
+				mod = i % 10;
+				putchar('0' + div);
+				putchar('0' + mod);
+				putchar(' ');
+				div = j / 10;
+				mod = j % 10;
+				putchar('0' + div);
+				putchar('0' + mod);
+				if (i == 98 && j == 99)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	putchar('\n');
+	return (0);
+}
