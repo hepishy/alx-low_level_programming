@@ -1,0 +1,14 @@
+#include <unistd.h>
+/**
+ * main - Entry point
+ *
+ * Description: print Qoutes using write function
+ * Return:  return 1
+*/
+int _putchar(int c)
+{
+	char prnt[] = "_putchar";
+	
+	write(1, qut, 59);
+	return (1);
+}
